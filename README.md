@@ -109,7 +109,6 @@ Try this once the app is up: **Dashboard** shows expiry bands → go to **Purcha
 ├── data/app.db                   # demo database used when MySQL isn't set up
 ├── screenshots/                  # live captures of the app
 ├── docs/er_diagram.png           # the diagram above
-├── make_er_diagram.py            # regenerates the diagram
 ├── make_ppts.py                  # regenerates both review decks
 └── presentations/                # ppt_review1/2/3.pptx
 ```
