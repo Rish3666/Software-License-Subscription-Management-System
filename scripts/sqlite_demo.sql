@@ -216,7 +216,13 @@ SELECT l.license_id, p.product_name, l.license_key, l.valid_until,
            WHEN julianday(l.valid_until) - julianday('now') <= 30 THEN 'CRITICAL (<30d)'
            WHEN julianday(l.valid_until) - julianday('now') <= 90 THEN 'WARNING (<90d)'
            ELSE 'OK'
-       END AS expiry_band, l.status
+       END AS expiry_band,
+       CASE
+           WHEN l.status = 'ACTIVE' AND l.valid_until < date('now')
+                THEN 'EXPIRED (stale flag)'
+           ELSE l.status
+       END AS effective_status,
+       l.status AS stored_status
 FROM LICENSE l JOIN SOFTWARE_PRODUCT p ON p.product_id = l.product_id;
 
 CREATE VIEW v_compliance_violations AS
