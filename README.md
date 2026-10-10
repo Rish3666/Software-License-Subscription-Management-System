@@ -93,9 +93,9 @@ Try this once the app is up: **Dashboard** shows expiry bands → go to **Purcha
 
 | File | Content |
 |---|---|
-| `ppt_review1.pptx` | Review 1 — problem, scope, requirements, ER model, plan |
-| `ppt_review2.pptx` | Review 2 — finalized design, implementation progress, prototype demo |
-| `ppt_review3.pptx` | Review 3 — final demo, app features & screenshots, documentation, tests |
+| `presentations/ppt_review1.pptx` | Review 1 — problem, scope, requirements, ER model, plan |
+| `presentations/ppt_review2.pptx` | Review 2 — finalized design, implementation progress, prototype demo |
+| `presentations/ppt_review3.pptx` | Review 3 — final demo, app features & screenshots, documentation, tests |
 
 
 ---
@@ -111,5 +111,5 @@ Try this once the app is up: **Dashboard** shows expiry bands → go to **Purcha
 ├── docs/er_diagram.png           # the diagram above
 ├── make_er_diagram.py            # regenerates the diagram
 ├── make_ppts.py                  # regenerates both review decks
-└── ppt_review1/2/3.pptx          # presentations
+└── presentations/                # ppt_review1/2/3.pptx
 ```
