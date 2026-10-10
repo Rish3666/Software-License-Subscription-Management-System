@@ -1,5 +1,14 @@
 # Software License & Subscription Management System
 
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.65-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![MySQL](https://img.shields.io/badge/MySQL-8.x-4479A1?logo=mysql&logoColor=white)](https://www.mysql.com/)
+[![SQLite](https://img.shields.io/badge/SQLite-3-003B57?logo=sqlite&logoColor=white)](https://sqlite.org/)
+[![pandas](https://img.shields.io/badge/pandas-2.0%2B-150458?logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![PyMySQL](https://img.shields.io/badge/PyMySQL-1.1-00758F?logo=python&logoColor=white)](https://pymysql.readthedocs.io/)
+[![Graphviz](https://img.shields.io/badge/Graphviz-ER_diagram-E7E9EB?logo=graphviz&logoColor=black)](https://graphviz.org/)
+[![Schema](https://img.shields.io/badge/DB_model-3NF-blueviolet)](sql/01_schema.sql)
+
 A database project that keeps track of every software license a university owns — what was bought, who is using it, when it expires, and what it costs to renew. Built with MySQL and a Streamlit web UI.
 
 **Student:** Jampana Naga Satya Sai Rishvarma · `25WU0102105` · B.Tech CSE (AI & ML), Woxsen University
@@ -30,6 +39,16 @@ One purchase buys seats of a product from a vendor; each seat is handed to one u
 - **Manage Data** — add, edit and delete rows in all 12 tables with dropdowns for IDs instead of typing them
 
 The database itself enforces the rules (unique license keys, seat limits, no allocation on expired licenses), so bad data can't get in even through other tools.
+
+---
+
+## Screenshots
+
+| Dashboard | Compliance |
+|---|---|
+| ![Dashboard](screenshots/dashboard.png) | ![Compliance](screenshots/compliance.png) |
+
+More in [`screenshots/`](screenshots/) — procurement, workflows, and the manage-data screens.
 
 ---
 
@@ -69,10 +88,7 @@ Try this once the app is up: **Dashboard** shows expiry bands → go to **Purcha
 
 ## 🎥 Demo Video
 
-- `Final_presentation_demo_video.mp4` — full walkthrough (larger file)
-- `Final_presentation_demo_video_small.mp4` — smaller version, same content
-
-Both are in this repo root.
+[Watch the full demo walkthrough (OneDrive)](https://1drv.ms/f/c/33c061bfa40b2a8d/IgCIFax4XKzeTau2swpsSAf_AcU-xcJP6DerT3h7NoOw0z8?e=G8moWs)
 
 ## 📊 Presentations
 
