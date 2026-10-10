@@ -97,7 +97,6 @@ Try this once the app is up: **Dashboard** shows expiry bands → go to **Purcha
 | `ppt_review2.pptx` | Review 2 — finalized design, implementation progress, prototype demo |
 | `ppt_review3.pptx` | Review 3 — final demo, app features & screenshots, documentation, tests |
 
-`presentation_script_review3.md` has a short speaking script for Review 3.
 
 ---
 
