@@ -125,3 +125,18 @@ BEGIN
 END$$
 
 DELIMITER ;
+
+-- ------------------------------------------------------------
+-- sp_sync_license_status : flip ACTIVE licenses whose validity
+-- has ended to EXPIRED so the stored status matches reality.
+-- Safe to run repeatedly; ren flip it back via sp_renew_license.
+-- ------------------------------------------------------------
+DELIMITER $$
+CREATE PROCEDURE sp_sync_license_status ()
+BEGIN
+    UPDATE LICENSE
+       SET status = 'EXPIRED'
+     WHERE status = 'ACTIVE'
+       AND valid_until < CURDATE();
+END$$
+DELIMITER ;

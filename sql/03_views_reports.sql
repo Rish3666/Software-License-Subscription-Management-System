@@ -61,7 +61,13 @@ SELECT
         WHEN DATEDIFF(l.valid_until, CURDATE()) <= 90           THEN 'WARNING (<90d)'
         ELSE 'OK'
     END AS expiry_band,
-    l.status
+    -- effective status: what the license SHOULD be right now
+    CASE
+        WHEN l.status = 'ACTIVE' AND l.valid_until < CURDATE()
+             THEN 'EXPIRED (stale flag)'
+        ELSE l.status
+    END AS effective_status,
+    l.status AS stored_status
 FROM LICENSE l
 JOIN SOFTWARE_PRODUCT p ON p.product_id = l.product_id;
 
