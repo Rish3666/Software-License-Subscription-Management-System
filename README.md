@@ -6,7 +6,6 @@
 [![SQLite](https://img.shields.io/badge/SQLite-3-003B57?logo=sqlite&logoColor=white)](https://sqlite.org/)
 [![pandas](https://img.shields.io/badge/pandas-2.0%2B-150458?logo=pandas&logoColor=white)](https://pandas.pydata.org/)
 [![PyMySQL](https://img.shields.io/badge/PyMySQL-1.1-00758F?logo=python&logoColor=white)](https://pymysql.readthedocs.io/)
-[![Graphviz](https://img.shields.io/badge/Graphviz-ER_diagram-E7E9EB?logo=graphviz&logoColor=black)](https://graphviz.org/)
 [![Schema](https://img.shields.io/badge/DB_model-3NF-blueviolet)](sql/01_schema.sql)
 
 A database project that keeps track of every software license a university owns — what was bought, who is using it, when it expires, and what it costs to renew. Built with MySQL and a Streamlit web UI.
